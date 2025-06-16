@@ -1,48 +1,58 @@
 /* navbar */
-body{
+body {
     font-family: "Plus Jakarta Sans", sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-.container{
+
+.container {
     flex: 1;
 }
-.navbar{
+
+.navbar {
     height: 5rem;
-    background-color: #fff;;
+    background-color: #fff;
+    ;
 }
-.fa-compass{
-    color:#fe424d;
+
+.fa-compass {
+    color: #fe424d;
     font-size: 2rem;
 
 }
-.nav-link{
-    color:#222222;
+
+.nav-link {
+    color: #222222;
 }
 
 /* footer  */
-.f-info-links a{
+.f-info-links a {
     text-decoration: none;
     color: #222222;
 }
-.f-info-links a:hover{
+
+.f-info-links a:hover {
     text-decoration: underline;
 }
-.f-info-links{
+
+.f-info-links {
     width: 100%;
 }
-.f-info-socials{
+
+.f-info-socials {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.f-info-socials i{
+
+.f-info-socials i {
     margin-left: 1rem;
     font-size: 1.2rem;
 }
-.f-info{
+
+.f-info {
     height: 8rem;
     background-color: #ebebeb;
     display: flex;
@@ -54,37 +64,42 @@ body{
 
 /* cards */
 
-.listing-card{
+.listing-card {
     border: none;
     margin-bottom: 2rem;
 }
-.card-img-top{
+
+.card-img-top {
     border-radius: 1rem;
     width: 100%;
     object-fit: cover;
 }
-.card-body{
+
+.card-body {
     padding: 0;
 }
-.card-text p{
+
+.card-text p {
     font-weight: 400;
-    
+
 }
-.listing_link{
+
+.listing_link {
     text-decoration: none;
 }
 
 /* card overlay */
 
-.card-img-overlay{
+.card-img-overlay {
     opacity: 0;
     background-color: rgb(255, 255, 255);
 }
-.card-img-overlay:hover{
+
+.card-img-overlay:hover {
     opacity: 0.2;
 }
 
-.add-btn{
+.add-btn {
     background-color: #fe424d;
     border: none;
     color: #fff;
@@ -93,17 +108,62 @@ body{
 
 /* Show page */
 
-.show-img{
-    height:30vh;
+.show-img {
+    height: 30vh;
 }
-.btns{
+
+.btns {
     display: flex;
     gap: 1rem;
 }
 
 
 /* Map */
-#map{
+#map {
     height: 400px;
     width: 80vh;
+}
+
+/* For Responsive */
+@media only screen and (max-width: 450px) {
+    #map {
+        max-width: 100%;
+    }
+
+    .offset-2 {
+        margin-left: auto !important;
+    }
+
+    .col-6 {
+        flex: auto !important;
+        width: 100% !important;
+    }
+
+    .row {
+        text-align: center;
+    }
+
+    .col-8 {
+        flex: auto !important;
+        max-width: 100% !important;
+    }
+
+    .col-5 {
+        flex: 0 0 auto;
+        width: 90% !important;
+    }
+
+    .starability-result {
+        transform: translateX(50%);
+    }
+
+    .container-fluid {
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .offset-3 {
+        margin-left: auto !important;
+        padding: 0 50px !important;
+    }
 }
